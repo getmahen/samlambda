@@ -3,7 +3,7 @@ version: 0.1
 phases:
   install:
     commands:
-      - npm install
+      - cd hello_world && npm install
       - aws cloudformation package --template-file template.yaml --s3-bucket samlambda --output-template-file outputSamTemplate.yaml
                                    
 artifacts:
