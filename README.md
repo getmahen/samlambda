@@ -154,3 +154,7 @@ Here are a few ideas that you can use to get more acquainted as to how this over
 Next, you can use the following resources to know more about beyond hello world samples and how others structure their Serverless applications:
 
 * [AWS Serverless Application Repository](https://aws.amazon.com/serverless/serverlessrepo/)
+
+
+* TO AUTOMATE DEPLOYMENT USING AWS CODEPIPELINE, CODEDEPLOY and CLOUDFORMATION (SAM) BASED ON CODE CHANGES in Github follow steps here
+https://docs.aws.amazon.com/lambda/latest/dg/automating-deployment.html
