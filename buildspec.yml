@@ -4,9 +4,8 @@ phases:
   install:
     commands:
       - npm install
-      - aws cloudformation package --template-file template.yaml --s3-bucket samlambda \
-                                   --output-template-file outputSamTemplate.yaml \
-                                   --profile mypersonaladmin
+      - aws cloudformation package --template-file template.yaml --s3-bucket samlambda --output-template-file outputSamTemplate.yaml
+                                   
 artifacts:
   type: zip
   files:
