@@ -82,6 +82,10 @@ sam package \
     --s3-bucket REPLACE_THIS_WITH_YOUR_S3_BUCKET_NAME
     --profile <aws cred profile>
 ```
+```
+Example: sam package --template-file ./template.yaml --output-template-file ./output.yaml --s3-bucket samlambda --profile mypersonaladmin
+```
+
 
 Next, the following command will create a Cloudformation Stack and deploy your SAM resources.
 
@@ -91,6 +95,9 @@ sam deploy \
     --stack-name sam-app \
     --capabilities CAPABILITY_IAM
     --profile <aws cred profile>
+```
+```
+sam deploy --template-file output.yaml --stack-name sam-app --capabilities CAPABILITY_IAM --profile mypersonaladmin
 ```
 
 > **See [Serverless Application Model (SAM) HOWTO Guide](https://github.com/awslabs/serverless-application-model/blob/master/HOWTO.md) for more details in how to get started.**
